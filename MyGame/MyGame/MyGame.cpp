@@ -4,10 +4,15 @@
 /*
 Maintenance Log
 
-Date: 4/29/29	Done: 
+Date: 4/29/22	Done: 
 				Cloned Williams Game Engine
 				Created project
 				Pushet to GitHub
+
+Date: 5/2/22	Done:
+				Tried to make meteors come from all sides
+				Created sprites
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

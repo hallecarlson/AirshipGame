@@ -94,6 +94,9 @@
     <None Include="Resources\README.md">
       <Filter>Resources</Filter>
     </None>
+    <None Include="..\..\..\..\..\Downloads\Airship-20220502-081448.piskel">
+      <Filter>Resources</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\..\Downloads\ship.png">

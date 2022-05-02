@@ -18,7 +18,8 @@ void MeteorSpawner::update(sf::Time& elapsed)
 
 		//spawn the meteor off the right side of the screen
 		//we're assuming the meteor isn't more than 100 pixels wide
-		float meteorX = (float)(size.x + 100);
+		//float meteorX = (float)(size.x + 100);
+		float meteorX = (float)(rand() % size.x);
 
 		//spawn the meteor somewhere along the height of the window, randomly
 		float meteorY = (float)(rand() % size.y);

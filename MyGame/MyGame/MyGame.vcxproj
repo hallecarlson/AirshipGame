@@ -114,6 +114,7 @@
     <ClInclude Include="ship.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\Airship-20220502-081448.piskel" />
     <None Include="Resources\README.md" />
   </ItemGroup>
   <ItemGroup>
