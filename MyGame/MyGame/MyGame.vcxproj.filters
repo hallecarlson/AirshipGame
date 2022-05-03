@@ -18,13 +18,13 @@
     <ClCompile Include="laser.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="meteor.cpp">
+    <ClCompile Include="blast.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="ship.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="MeteorSpawner.cpp">
+    <ClCompile Include="blastspawner.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="explosion.cpp">
@@ -63,10 +63,10 @@
     <ClInclude Include="laser.h">
       <Filter>Engine</Filter>
     </ClInclude>
-    <ClInclude Include="meteor.h">
+    <ClInclude Include="blast.h">
       <Filter>Engine</Filter>
     </ClInclude>
-    <ClInclude Include="MeteorSpawner.h">
+    <ClInclude Include="blastspawner.h">
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="explosion.h">
@@ -97,18 +97,24 @@
     <None Include="..\..\..\..\..\Downloads\Airship-20220502-081448.piskel">
       <Filter>Resources</Filter>
     </None>
+    <None Include="..\..\..\..\..\Downloads\Cloud-20220503-080630.piskel">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Downloads\Projectile-20220503-083646.piskel">
+      <Filter>Resources</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\..\Downloads\ship.png">
       <Filter>Resources</Filter>
     </Image>
-    <Image Include="..\..\..\..\..\..\Downloads\laser.png">
-      <Filter>Engine</Filter>
-    </Image>
     <Image Include="..\..\..\..\..\..\Downloads\meteor.png">
       <Filter>Resources</Filter>
     </Image>
     <Image Include="..\..\..\..\..\..\Downloads\explosion-spritesheet.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\Downloads\laser.png">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>

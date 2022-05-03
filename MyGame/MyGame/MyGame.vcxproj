@@ -91,8 +91,8 @@
     <ClCompile Include="gameoverscene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="laser.cpp" />
-    <ClCompile Include="meteor.cpp" />
-    <ClCompile Include="MeteorSpawner.cpp" />
+    <ClCompile Include="blast.cpp" />
+    <ClCompile Include="blastspawner.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="score.cpp" />
     <ClCompile Include="ship.cpp" />
@@ -108,13 +108,15 @@
     <ClInclude Include="gameoverscene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="laser.h" />
-    <ClInclude Include="meteor.h" />
-    <ClInclude Include="MeteorSpawner.h" />
+    <ClInclude Include="blast.h" />
+    <ClInclude Include="blastspawner.h" />
     <ClInclude Include="score.h" />
     <ClInclude Include="ship.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\Downloads\Airship-20220502-081448.piskel" />
+    <None Include="..\..\..\..\..\Downloads\Cloud-20220503-080630.piskel" />
+    <None Include="..\..\..\..\..\Downloads\Projectile-20220503-083646.piskel" />
     <None Include="Resources\README.md" />
   </ItemGroup>
   <ItemGroup>

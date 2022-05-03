@@ -13,6 +13,11 @@ Date: 5/2/22	Done:
 				Tried to make meteors come from all sides
 				Created sprites
 				Pushed to GitHub
+
+Date: 5/3/22	Done:
+				Added code to replace the meteor with the blast
+				Added sprites for the blast and the clouds
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

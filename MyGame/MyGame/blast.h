@@ -2,11 +2,11 @@
 
 #include "Engine/GameEngine.h"
 
-class Meteor : public GameObject
+class Blast : public GameObject
 {
 public:
-	//creates our meteor
-	Meteor(sf::Vector2f pos);
+	//creates our blast
+	Blast(sf::Vector2f pos);
 
 	//functions overriden from GameObject
 	void draw();
@@ -18,4 +18,4 @@ private:
 	sf::Sprite sprite_;
 };
 
-typedef std::shared_ptr<Meteor> MeteorPtr;
+typedef std::shared_ptr<Blast> BlastPtr;
