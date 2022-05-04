@@ -18,6 +18,11 @@ Date: 5/3/22	Done:
 				Added code to replace the meteor with the blast
 				Added sprites for the blast and the clouds
 				Pushed to GitHub
+
+Date: 5/4/22	Done:
+				Added a file for sprites and more convinient organization
+				Made significant progress on my game design document
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

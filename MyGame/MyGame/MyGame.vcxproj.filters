@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Engine\AnimatedSprite.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Game.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
@@ -15,21 +12,6 @@
     </ClCompile>
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="GameScene.cpp" />
-    <ClCompile Include="laser.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="blast.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="ship.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="blastspawner.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="explosion.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="score.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
@@ -39,11 +21,26 @@
     <ClCompile Include="gameoverscene.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\AnimatedSprite.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="blast.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="blastspawner.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="explosion.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="laser.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="ship.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine\AnimatedSprite.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Game.h">
       <Filter>Engine</Filter>
     </ClInclude>
@@ -57,21 +54,6 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="GameScene.h" />
-    <ClInclude Include="ship.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="laser.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="blast.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="blastspawner.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="explosion.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
     <ClInclude Include="score.h">
       <Filter>Engine</Filter>
     </ClInclude>
@@ -81,6 +63,24 @@
     <ClInclude Include="gameoverscene.h">
       <Filter>Engine</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\AnimatedSprite.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="blast.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="blastspawner.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="explosion.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="laser.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="ship.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -88,6 +88,9 @@
     </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{97d329b3-5b8c-40b4-8b65-6fbf428de7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\sprites">
+      <UniqueIdentifier>{48744239-12e4-451a-80d6-554a67fb2171}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
