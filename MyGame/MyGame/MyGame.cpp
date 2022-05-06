@@ -23,6 +23,10 @@ Date: 5/4/22	Done:
 				Added a file for sprites and more convinient organization
 				Made significant progress on my game design document
 				Pushed to GitHub
+
+Date: 5/6/22	Done:
+				Added code for scrolling clouds, which function the same as enemy projectiles, just without collision
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

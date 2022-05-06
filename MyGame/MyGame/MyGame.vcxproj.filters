@@ -39,6 +39,12 @@
     <ClCompile Include="ship.cpp">
       <Filter>Engine\sprites</Filter>
     </ClCompile>
+    <ClCompile Include="cloud.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="cloudspawner.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Game.h">
@@ -79,6 +85,12 @@
       <Filter>Engine\sprites</Filter>
     </ClInclude>
     <ClInclude Include="ship.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="cloud.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="cloudspawner.h">
       <Filter>Engine\sprites</Filter>
     </ClInclude>
   </ItemGroup>
