@@ -132,6 +132,15 @@
     <Image Include="..\..\..\..\..\..\Downloads\laser.png">
       <Filter>Resources</Filter>
     </Image>
+    <Image Include="..\..\..\..\..\Downloads\Airship.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\Downloads\Cloud.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\Downloads\Projectile.png">
+      <Filter>Resources</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Media Include="..\..\..\..\..\..\Downloads\boom.wav">

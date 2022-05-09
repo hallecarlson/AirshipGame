@@ -128,6 +128,9 @@
     <Image Include="..\..\..\..\..\..\Downloads\laser.png" />
     <Image Include="..\..\..\..\..\..\Downloads\meteor.png" />
     <Image Include="..\..\..\..\..\..\Downloads\ship.png" />
+    <Image Include="..\..\..\..\..\Downloads\Airship.png" />
+    <Image Include="..\..\..\..\..\Downloads\Cloud.png" />
+    <Image Include="..\..\..\..\..\Downloads\Projectile.png" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="..\..\..\..\..\..\Downloads\boom.wav" />

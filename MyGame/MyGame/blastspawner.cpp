@@ -22,10 +22,10 @@ void BlastSpawner::update(sf::Time& elapsed)
 		float blastX = (float)(rand() % size.x);
 
 		//spawn the meteor somewhere along the height of the window, randomly
-		float blastY = (float)(rand() % size.y);
+		float blastY = (float)(size.y + 100);
 
 		//create a meteor and add it to the scene
-		BlastPtr meteor = std::make_shared< Blast(sf::Vector2f(blastX, blastY));
+		BlastPtr blast = std::make_shared<Blast>(sf::Vector2f(blastX, blastY));
 		GAME.getCurrentScene().addGameObject(blast);
 	}
 }

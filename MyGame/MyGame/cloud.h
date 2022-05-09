@@ -11,8 +11,9 @@ public:
 	//functions overriden from game object
 	void draw();
 	void update(sf::Time& elapsed);
+
 private:
-	sf::Sprite;
+	sf::Sprite sprite_;
 };
 
-typedefstd::shared_ptr<Cloud> CloudPtr;
+typedef std::shared_ptr<Cloud> CloudPtr;

@@ -13,11 +13,11 @@ void CloudSpawner::update(sf::Time& elapsed)
 	{
 		timer_ = SPAWN_DELAY;
 
-		sf::Vector2f size = GAME.getRenderWindow().getSize();
+		sf::Vector2u size = GAME.getRenderWindow().getSize();
 
 		//spawn on right screen
 		//assume it isn't more than 100 pixels wide
-		float cloudY = (float)(size.x + 100)
+		float cloudY = (float)(size.x + 100);
 
 		//spawn on height of window randomly
 		float cloudX = (float)(rand() % size.y);

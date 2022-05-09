@@ -2,19 +2,20 @@
 
 #include "Engine/GameEngine.h"
 
-class Blast : public GameObject
+class Blast : public AnimatedSprite
 {
 public:
 	//creates our blast
 	Blast(sf::Vector2f pos);
-
-	//functions overriden from GameObject
+	
 	void draw();
-	void update(sf::Time& elapsed);
+	void update(sf::Time& elapsed);\
+
 	sf::FloatRect getCollisionRect();
 	void handleCollision(GameObject& otherGameObject);
 
 private:
+	void SetUpBlastAnimation();
 	sf::Sprite sprite_;
 };
 

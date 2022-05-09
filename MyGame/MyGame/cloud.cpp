@@ -1,10 +1,13 @@
 #include "cloud.h"
+#include "explosion.h"
+#include "cloudspawner.h"
+#include "GameScene.h"
 
 const float SPEED = 0.25f;
 
 Cloud::Cloud(sf::Vector2f pos)
 {
-	sprite_.setTexture(GAME.getTexture("Resources/Cloud-20220503-080630.piskel"));
+	sprite_.setTexture(GAME.getTexture("Resources/Cloud.png"));
 	sprite_.setPosition(pos);
 	assignTag("cloud");
 }
