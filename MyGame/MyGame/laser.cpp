@@ -14,7 +14,7 @@ void Laser::draw()
 	GAME.getRenderWindow().draw(sprite_);
 }
 
-void Laser::update(sf::Time& elapsed)
+void Laser::update(sf::Time& elapsed) //maybe laser direction needs to be changed here
 {
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();

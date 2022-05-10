@@ -5,14 +5,17 @@
 #include "score.h"
 #include "explosion.h"
 #include "gameoverscene.h"
+#include "blast.h"
 
 GameScene::GameScene() 
 {
 	ShipPtr ship = std::make_shared<Ship>();
 	addGameObject(ship);
 
-	BlastSpawnerPtr blastSpawner = std::make_shared<BlastSpawner>();
-	addGameObject(blastSpawner);
+	//BlastSpawnerPtr blastSpawner = std::make_shared<BlastSpawner>();
+	//addGameObject(blastSpawner);
+	BlastPtr blast = std::make_shared<Blast>(sf::Vector2f(200.0f, 200.0f));
+	GAME.getCurrentScene().addGameObject(blast);
 
 	CloudSpawnerPtr cloudSpawner = std::make_shared<CloudSpawner>();
 	addGameObject(cloudSpawner);

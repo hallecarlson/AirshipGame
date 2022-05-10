@@ -8,14 +8,14 @@ const float SPEED = 0.25f;
 Blast::Blast(sf::Vector2f pos)
 	:AnimatedSprite (pos)
 {
-	AnimatedSprite.setTexture(GAME.getTexture("Resources/Projectile.png"));
-	AnimatedSprite.setPosition(pos);
-	assignTag("blast");
+	AnimatedSprite::setTexture(GAME.getTexture("Resources/Projectile.png"));
+	//AnimatedSprite.setPosition(pos);
+	//assignTag("blast");
 
 	setCollisionCheckEnabled(true);
 
 	SetUpBlastAnimation();
-	playAnimation("blast", AnimationMode::OnceForwards);
+	playAnimation("blast", AnimationMode::LoopForwards);
 }
 
 void Blast::SetUpBlastAnimation()
@@ -76,14 +76,4 @@ void Blast::handleCollision(GameObject& otherGameObject)
 	}
 
 	makeDead();
-}
-
-void Blast::update(sf::Time& elapsed)
-{
-	AnimatedSprite::update(elapsed);
-
-	if (!isPlaying())
-	{
-		makeDead();
-	}
 }

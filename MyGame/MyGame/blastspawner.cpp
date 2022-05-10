@@ -19,10 +19,10 @@ void BlastSpawner::update(sf::Time& elapsed)
 		//spawn the meteor off the right side of the screen
 		//we're assuming the meteor isn't more than 100 pixels wide
 		//float meteorX = (float)(size.x + 100);
-		float blastX = (float)(rand() % size.x);
+		float blastX = (float)(size.x / 2);
 
 		//spawn the meteor somewhere along the height of the window, randomly
-		float blastY = (float)(size.y + 100);
+		float blastY = (float)(size.y / 2);
 
 		//create a meteor and add it to the scene
 		BlastPtr blast = std::make_shared<Blast>(sf::Vector2f(blastX, blastY));

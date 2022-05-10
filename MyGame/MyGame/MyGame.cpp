@@ -31,6 +31,11 @@ Date: 5/6/22	Done:
 Date: 5/9/22	Done:
 				Added code for sprites and animations
 				Pushed to GitHub
+
+Date: 5/10/22	Done:
+				Added code for clouds, blasts, and lasers
+				Got help from Mr. Miyoshi
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;
