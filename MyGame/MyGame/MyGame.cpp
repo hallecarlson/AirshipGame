@@ -2,6 +2,16 @@
 #include "GameScene.h"
 
 /*
+
+To-do List
+	Fix errors
+	Get clouds and blasts to spawn
+	Get blasts to animate (and not disappear after the animation ends
+	Get blasts to spawn randomly from all sides
+	Get lasers to shoot from all sides using WASD
+	Handle collision
+	Fix lives system and tweak points system accordingly
+ 
 Maintenance Log
 
 Date: 4/29/22	Done: 
@@ -35,6 +45,11 @@ Date: 5/9/22	Done:
 Date: 5/10/22	Done:
 				Added code for clouds, blasts, and lasers
 				Got help from Mr. Miyoshi
+				Pushed to GitHub
+
+Date: 5/11/22	Done:
+				Got help from Mr. Miyoshi but didn't fix the problem (yet)
+				Added some code for laser directions
 				Pushed to GitHub
 */
 

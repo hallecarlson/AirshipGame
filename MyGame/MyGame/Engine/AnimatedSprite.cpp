@@ -9,6 +9,14 @@ AnimatedSprite::AnimatedSprite(sf::Vector2f position, int msPerFrame) :
 {
 	setPosition(position);
 }
+sf::Vector2f AnimatedSprite::getPosition()
+{
+	return sprite_.getPosition();
+}
+sf::Sprite& AnimatedSprite::getSprite()
+{
+	return sprite_;
+}
 
 // Sets the spritesheet texture we will use for animation frames.
 void AnimatedSprite::setTexture(sf::Texture &texture)

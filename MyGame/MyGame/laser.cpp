@@ -2,7 +2,7 @@
 
 const float SPEED = 1.2f;
 
-Laser::Laser(sf::Vector2f pos)
+Laser::Laser(sf::Vector2f pos, int dir)
 {
 	sprite_.setTexture(GAME.getTexture("Resources/laser.png"));
 	sprite_.setPosition(pos);
@@ -14,20 +14,22 @@ void Laser::draw()
 	GAME.getRenderWindow().draw(sprite_);
 }
 
-void Laser::update(sf::Time& elapsed) //maybe laser direction needs to be changed here
+void Laser::update(sf::Time& elapsed) //always shoots positive x
 {
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
 
-	if (pos.x > GAME.getRenderWindow().getSize().x)
+	if (direction == 1) //right, add other directions
 	{
-		makeDead();
+		if (pos.x > GAME.getRenderWindow().getSize().x)
+		{
+			makeDead();
+		}
+		else
+		{
+			sprite_.setPosition(sf::Vector2f(pos.x + SPEED * msElapsed, pos.y));
+		}
 	}
-	else
-	{
-		sprite_.setPosition(sf::Vector2f(pos.x + SPEED * msElapsed, pos.y));
-	}
-
 }
 
 sf::FloatRect Laser::getCollisionRect()

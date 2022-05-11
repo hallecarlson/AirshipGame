@@ -6,7 +6,7 @@ class Laser : public GameObject
 {
 public:
 	//creates our laser
-	Laser(sf::Vector2f pos);
+	Laser(sf::Vector2f pos, int dir);
 
 	//functions overriden from GameObject:
 	void draw();
@@ -15,6 +15,8 @@ public:
 
 private:
 	sf::Sprite sprite_;
+
+	int direction;
 };
 
 typedef std::shared_ptr<Laser> LaserPtr;

@@ -42,10 +42,12 @@ void Blast::SetUpBlastAnimation()
 
 void Blast::update(sf::Time& elapsed)
 {
+	AnimatedSprite::update(elapsed);
+	
 	int msElapsed = elapsed.asMilliseconds();
-	sf::Vector2f pos = sprite_.getPosition();
+	sf::Vector2f pos = AnimatedSprite::getPosition();
 
-	if (pos.x < sprite_.getGlobalBounds().width * -1)
+	if (pos.x < AnimatedSprite::getCollisionRect().width * -1)
 	{
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		scene.decreaseLives();
@@ -54,21 +56,21 @@ void Blast::update(sf::Time& elapsed)
 	}
 	else
 	{
-		sprite_.setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
+		setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
 	}
 }
 
-sf::FloatRect Blast::getCollisionRect()
+/*sf::FloatRect Blast::getCollisionRect()
 {
-	return sprite_.getGlobalBounds();
-}
+	return AnimatedSprite::getSprite().getGlobalBounds();
+}*/
 
-void Blast::handleCollision(GameObject& otherGameObject)
+/*void Blast::handleCollision(GameObject& otherGameObject)
 {
 	if (otherGameObject.hasTag("laser"))
 	{
 		otherGameObject.makeDead();
-		ExplosionPtr explosion = std::make_shared<Explosion>(sprite_.getPosition());
+		ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
 		GAME.getCurrentScene().addGameObject(explosion);
 
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
@@ -76,4 +78,4 @@ void Blast::handleCollision(GameObject& otherGameObject)
 	}
 
 	makeDead();
-}
+}*/
