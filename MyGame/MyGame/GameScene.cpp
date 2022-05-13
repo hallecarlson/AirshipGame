@@ -14,14 +14,15 @@ GameScene::GameScene()
 
 	//BlastSpawnerPtr blastSpawner = std::make_shared<BlastSpawner>();
 	//addGameObject(blastSpawner);
-	BlastPtr blast = std::make_shared<Blast>(sf::Vector2f(200.0f, 200.0f));
+
+	/*BlastPtr blast = std::make_shared<Blast>(sf::Vector2f(200.0f, 200.0f));
 	GAME.getCurrentScene().addGameObject(blast);
 
 	CloudSpawnerPtr cloudSpawner = std::make_shared<CloudSpawner>();
 	addGameObject(cloudSpawner);
 
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
-	addGameObject(score);
+	addGameObject(score);*/
 }
 
 int GameScene::getScore()

@@ -13,7 +13,7 @@ sf::Vector2f AnimatedSprite::getPosition()
 {
 	return sprite_.getPosition();
 }
-sf::Sprite& AnimatedSprite::getSprite()
+sf::Sprite AnimatedSprite::getSprite()
 {
 	return sprite_;
 }

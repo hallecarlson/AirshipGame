@@ -51,6 +51,14 @@ Date: 5/11/22	Done:
 				Got help from Mr. Miyoshi but didn't fix the problem (yet)
 				Added some code for laser directions
 				Pushed to GitHub
+
+Date: 5/13/22	Done:
+				Got help from Mr. Miyoshi
+				Got the game running
+				Fixed ship movement
+				Added code for lasers moving in all directions (which doesn't work yet because I'm likely missing an updating if statement)
+				Filled out advanced goal sheet
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

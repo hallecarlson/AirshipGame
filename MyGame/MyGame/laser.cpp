@@ -19,7 +19,7 @@ void Laser::update(sf::Time& elapsed) //always shoots positive x
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
 
-	if (direction == 1) //right, add other directions
+	if (direction == 3) //right, add other directions
 	{
 		if (pos.x > GAME.getRenderWindow().getSize().x)
 		{

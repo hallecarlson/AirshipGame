@@ -61,7 +61,7 @@ public:
 
 	// Gets the position of the sprite.
 	sf::Vector2f getPosition();
-	sf::Sprite& getSprite();
+	sf::Sprite getSprite();
 
 	// Set the origin mode, which specifies how we draw the sprite relative to its position.
 	void setOriginMode(OriginMode origin);

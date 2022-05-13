@@ -20,16 +20,34 @@ void Ship::draw()
 
 void Ship::update(sf::Time& elapsed)
 {
+	int direction = 3;
 	sf::Vector2f pos = sprite_.getPosition();
 	float x = pos.x;
 	float y = pos.y;
 
 	int msElapsed = elapsed.asMilliseconds();
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))		y -= SPEED * msElapsed;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))		y -= SPEED * msElapsed;	
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))		y += SPEED * msElapsed;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))		x -= SPEED * msElapsed;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))	x += SPEED * msElapsed;
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+	{
+		direction = 0;
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+	{
+		direction = 1;
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+	{
+		direction = 2;
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+	{
+		direction = 3;
+	}
 
 	sprite_.setPosition(sf::Vector2f(x, y));
 
@@ -87,7 +105,7 @@ void Ship::update(sf::Time& elapsed)
 		float laserX = x + bounds.width;
 		float laserY = y + (bounds.height / 2.0f);
 
-		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
+		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY), direction);
 		GAME.getCurrentScene().addGameObject(laser);
 	}
 }
