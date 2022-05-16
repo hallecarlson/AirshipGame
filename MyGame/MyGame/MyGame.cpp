@@ -59,6 +59,14 @@ Date: 5/13/22	Done:
 				Added code for lasers moving in all directions (which doesn't work yet because I'm likely missing an updating if statement)
 				Filled out advanced goal sheet
 				Pushed to GitHub
+
+Date: 5/16/22	Done: 
+				Tried to fix laser movement
+				Got help from Mr. Miyoshi
+				Fixed some lines of code
+				Got the up and right lasers to move
+				Tried to fix the left and down lasers
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

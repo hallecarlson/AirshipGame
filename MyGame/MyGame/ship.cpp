@@ -56,47 +56,55 @@ void Ship::update(sf::Time& elapsed)
 		fireTimer_ -= msElapsed;
 	}
 
-
-	/*if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && fireTimer_ <= 0) //change direction (+y)
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && fireTimer_ <= 0) //up W
 	{
 		fireTimer_ = FIRE_DELAY;
 
 		sf::FloatRect bounds = sprite_.getGlobalBounds();
 
-		float laserX = x + (bounds.height / 2.0f);
-		float laserY = y + bounds.width;
+		//float laserX = x + (bounds.height / 2.0f);
+		//float laserY = y + bounds.width;
 
-		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
-		GAME.getCurrentScene().addGameObject(laser);
-	}*/
+		//float laserX = x + (bounds.width / 2.0f);
+		//float laserY = y + bounds.height;
 
-	/*if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && fireTimer_ <= 0) //check direction (-x)
-	{
-		fireTimer_ = FIRE_DELAY;
-
-		sf::FloatRect bounds = sprite_.getGlobalBounds();
-
-		float laserX = x - bounds.width;
+		float laserX = x + bounds.width;
 		float laserY = y + (bounds.height / 2.0f);
 
-		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
+		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY), direction);
 		GAME.getCurrentScene().addGameObject(laser);
-	}*/
-
-	/*if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && fireTimer_ <= 0) //change direction (-y)
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && fireTimer_ <= 0) //left A
 	{
 		fireTimer_ = FIRE_DELAY;
 
 		sf::FloatRect bounds = sprite_.getGlobalBounds();
 
-		float laserX = x - (bounds.height / 2.0f);
-		float laserY = y + bounds.width;
+		//float laserX = x - bounds.width;
+		//float laserY = y + (bounds.height / 2.0f);
 
-		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
+		float laserX = x + bounds.width;
+		float laserY = y + (bounds.height / 2.0f);
+
+		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY), direction);
 		GAME.getCurrentScene().addGameObject(laser);
-	}*/
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && fireTimer_ <= 0) //down S
+	{
+		fireTimer_ = FIRE_DELAY;
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && fireTimer_ <= 0) //(+x)
+		sf::FloatRect bounds = sprite_.getGlobalBounds();
+
+		//float laserX = x - (bounds.height / 2.0f);
+		//float laserY = y + bounds.width;
+
+		float laserX = x + bounds.width;
+		float laserY = y + (bounds.height / 2.0f);
+
+		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY), direction);
+		GAME.getCurrentScene().addGameObject(laser);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && fireTimer_ <= 0) //right D
 	{
 		fireTimer_ = FIRE_DELAY;
 
