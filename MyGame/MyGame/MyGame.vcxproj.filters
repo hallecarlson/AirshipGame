@@ -45,6 +45,9 @@
     <ClCompile Include="cloudspawner.cpp">
       <Filter>Engine\sprites</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Game.h">

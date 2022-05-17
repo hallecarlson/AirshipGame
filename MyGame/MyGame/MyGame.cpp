@@ -67,6 +67,13 @@ Date: 5/16/22	Done:
 				Got the up and right lasers to move
 				Tried to fix the left and down lasers
 				Pushed to GitHub
+
+Date: 5/17/22	Done:
+				Tried to fix laser spawns
+				Got help from Mr. Miyoshi
+				Fixed laser multi-directional spawns!!
+				Tried to fix cloud spawns, but didn't succeed (yet!!)
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

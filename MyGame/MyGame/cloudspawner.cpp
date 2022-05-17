@@ -17,10 +17,10 @@ void CloudSpawner::update(sf::Time& elapsed)
 
 		//spawn on right screen
 		//assume it isn't more than 100 pixels wide
-		float cloudY = (float)(size.x + 100);
+		float cloudX = (float)(size.x + 100);
 
 		//spawn on height of window randomly
-		float cloudX = (float)(rand() % size.y);
+		float cloudY = (float)(rand() % size.y);
 
 		//create cloud and add to screen
 		CloudPtr cloud = std::make_shared<Cloud>(sf::Vector2f(cloudX, cloudY));

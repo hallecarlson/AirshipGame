@@ -9,6 +9,7 @@ Laser::Laser(sf::Vector2f pos, int dir)
 	assignTag("laser");
 
 	direction = dir;
+	//printf("%i\n", direction);
 }
 
 void Laser::draw()
@@ -23,7 +24,7 @@ void Laser::update(sf::Time& elapsed)
 
 	if (direction == 0) //up W
 	{
-		if (pos.y > GAME.getRenderWindow().getSize().y)
+		if (pos.y < 0)
 		{
 			makeDead();
 		}
@@ -34,7 +35,7 @@ void Laser::update(sf::Time& elapsed)
 	}	
 	if (direction == 1) //left A
 	{
-		if (pos.x < GAME.getRenderWindow().getSize().x)
+		if (pos.x < 0)
 		{
 			makeDead();
 		}
@@ -45,7 +46,7 @@ void Laser::update(sf::Time& elapsed)
 	}
 	if (direction == 2) //down S
 	{
-		if (pos.y < GAME.getRenderWindow().getSize().y)
+		if (pos.y > GAME.getRenderWindow().getSize().y)
 		{
 			makeDead();
 		}
