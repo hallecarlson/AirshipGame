@@ -1,5 +1,6 @@
-#include "Blast_tSpawner.h"
+#include "temp_blastspawner.h"
 
+/*
 //the number of milliseconds between meteor spawns
 const int SPAWN_DELAY = 1000;
 
@@ -28,3 +29,4 @@ void Blast_tSpawner::update(sf::Time& elapsed)
 		GAME.getCurrentScene().addGameObject(temp_blast);
 	}
 }
+*/

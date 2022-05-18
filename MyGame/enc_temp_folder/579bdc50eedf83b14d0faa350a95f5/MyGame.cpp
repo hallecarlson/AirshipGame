@@ -86,10 +86,6 @@ Date: 5/18/22	Done:
 				Commented out temp blast files to work on clouds
 				Clouds worked due to edits made last night
 				Changed the speed and spawn rate of the clouds to be less distracting to the player and represent the speed of a blimp as apposed to the speed of an airplane
-				Uncommented blast files to try and solve the errors
-				Got help from Mr. Miyoshi
-				Commented out some things to try and get the sprite on the screen
-				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

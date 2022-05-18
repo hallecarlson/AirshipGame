@@ -1,7 +1,7 @@
 #include "cloudspawner.h"
 
 //number of milliseconds between cloud spawns
-const int SPAWN_DELAY = 1000;
+const int SPAWN_DELAY = 5000;
 
 void CloudSpawner::update(sf::Time& elapsed)
 {

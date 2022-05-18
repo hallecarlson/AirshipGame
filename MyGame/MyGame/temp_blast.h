@@ -2,6 +2,7 @@
 
 #include "Engine/GameEngine.h"
 
+/*
 class Blast_t : public GameObject
 {
 public:
@@ -19,3 +20,4 @@ private:
 };
 
 typedef std::shared_ptr<Blast_t> Blast_tPtr;
+*/

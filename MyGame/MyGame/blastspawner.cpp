@@ -1,6 +1,5 @@
 #include "blastspawner.h"
 
-/*
 //the number of milliseconds between blast spawns
 const int SPAWN_DELAY = 1000;
 
@@ -30,4 +29,3 @@ void BlastSpawner::update(sf::Time& elapsed)
 		GAME.getCurrentScene().addGameObject(blast);
 	}
 }
-*/

@@ -3,6 +3,7 @@
 #include "temp_blastspawner.h"
 #include "GameScene.h"
 
+/*
 const float SPEED = 0.25f;
 
 Blast_t::Blast_t(sf::Vector2f pos)
@@ -36,7 +37,7 @@ void Blast_t::update(sf::Time& elapsed)
 	}
 }
 
-/*sf::FloatRect Blast_t::getCollisionRect()
+sf::FloatRect Blast_t::getCollisionRect()
 {
 	return sprite_.getGlobalBounds();
 }
@@ -54,4 +55,5 @@ void Blast_t::handleCollision(GameObject& otherGameObject)
 	}
 
 	makeDead();
-}*/
+}
+*/

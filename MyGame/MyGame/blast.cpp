@@ -3,19 +3,20 @@
 #include "blastspawner.h"
 #include "GameScene.h"
 
-/*const float SPEED = 0.25f;
+const float SPEED = 0.25f;
 
 Blast::Blast(sf::Vector2f pos)
 	:AnimatedSprite (pos)
 {
 	AnimatedSprite::setTexture(GAME.getTexture("Resources/Projectile.png"));
-	//AnimatedSprite.setPosition(pos);
-	//assignTag("blast");
-
-	setCollisionCheckEnabled(true);
+	//AnimatedSprite::setPosition(pos);	
 
 	SetUpBlastAnimation();
 	playAnimation("blast", AnimationMode::LoopForwards);
+
+	//assignTag("blast");
+
+	//setCollisionCheckEnabled(true);
 }
 
 void Blast::SetUpBlastAnimation()
@@ -35,29 +36,31 @@ void Blast::SetUpBlastAnimation()
 	addAnimation("blast", frames);
 }
 
-//void Blast::draw()
-//{
-//	GAME.getRenderWindow().draw(sprite_);
-//}
+/*
+void Blast::draw()
+{
+	GAME.getRenderWindow().draw(sprite_);
+}
+*/
 
 void Blast::update(sf::Time& elapsed)
 {
 	AnimatedSprite::update(elapsed);
 	
-	int msElapsed = elapsed.asMilliseconds();
-	sf::Vector2f pos = AnimatedSprite::getPosition();
+	//int msElapsed = elapsed.asMilliseconds();
+	//sf::Vector2f pos = AnimatedSprite::getPosition();
 
-	if (pos.x < AnimatedSprite::getCollisionRect().width * -1)
+	if (!isPlaying() /*|| pos.x < AnimatedSprite::getCollisionRect().width * -1*/)
 	{
-		GameScene& scene = (GameScene&)GAME.getCurrentScene();
-		scene.decreaseLives();
+		//GameScene& scene = (GameScene&)GAME.getCurrentScene();
+		//scene.decreaseLives();
 		
 		makeDead();
 	}
-	else
+	/*else
 	{
 		setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
-	}
+	}*/
 }
 
 //sf::FloatRect Blast::getCollisionRect()
@@ -79,4 +82,3 @@ void Blast::update(sf::Time& elapsed)
 
 //	makeDead();
 //}
-*/
