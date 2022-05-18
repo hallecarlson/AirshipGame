@@ -1,10 +1,9 @@
-#include "blastspawner.h"
+#include "Blast_tSpawner.h"
 
-/*
-//the number of milliseconds between blast spawns
+//the number of milliseconds between meteor spawns
 const int SPAWN_DELAY = 1000;
 
-void BlastSpawner::update(sf::Time& elapsed)
+void Blast_tSpawner::update(sf::Time& elapsed)
 {
 	//determine how much time has passed and adjust our timer
 	int msElapsed = elapsed.asMilliseconds();
@@ -19,15 +18,13 @@ void BlastSpawner::update(sf::Time& elapsed)
 
 		//spawn the meteor off the right side of the screen
 		//we're assuming the meteor isn't more than 100 pixels wide
-		//float meteorX = (float)(size.x + 100);
-		float blastX = (float)(size.x / 2);
+		float temp_blastX = (float)(size.x + 100);
 
 		//spawn the meteor somewhere along the height of the window, randomly
-		float blastY = (float)(size.y / 2);
+		float temp_blastY = (float)(rand() % size.y);
 
 		//create a meteor and add it to the scene
-		BlastPtr blast = std::make_shared<Blast>(sf::Vector2f(blastX, blastY));
-		GAME.getCurrentScene().addGameObject(blast);
+		Blast_tPtr meteor = std::make_shared<Blast_t>(sf::Vector2f(temp_blastX, temp_blastY));
+		GAME.getCurrentScene().addGameObject(temp_blast);
 	}
 }
-*/

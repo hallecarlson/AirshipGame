@@ -3,6 +3,7 @@
 #include "Engine/GameEngine.h"
 #include "blast.h"
 
+/*
 class BlastSpawner : public GameObject
 {
 public:
@@ -13,3 +14,4 @@ private:
 };
 
 typedef std::shared_ptr<BlastSpawner> BlastSpawnerPtr;
+*/

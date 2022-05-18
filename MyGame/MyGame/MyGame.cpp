@@ -74,6 +74,12 @@ Date: 5/17/22	Done:
 				Fixed laser multi-directional spawns!!
 				Tried to fix cloud spawns, but didn't succeed (yet!!)
 				Pushed to GitHub
+
+				Pulled from GitHub
+				Tried to fix clouds
+				Some error prevented me from running the game
+				Made temporary files for blasts using exact meteor code from the game engine tutorial
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

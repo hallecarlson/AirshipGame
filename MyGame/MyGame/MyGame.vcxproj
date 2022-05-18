@@ -98,6 +98,8 @@
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="score.cpp" />
     <ClCompile Include="ship.cpp" />
+    <ClCompile Include="temp_blast.cpp" />
+    <ClCompile Include="temp_blastspawner.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +119,8 @@
     <ClInclude Include="blastspawner.h" />
     <ClInclude Include="score.h" />
     <ClInclude Include="ship.h" />
+    <ClInclude Include="temp_blast.h" />
+    <ClInclude Include="temp_blastspawner.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\Downloads\Airship-20220502-081448.piskel" />

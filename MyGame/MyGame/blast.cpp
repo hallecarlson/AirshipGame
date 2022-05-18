@@ -3,7 +3,7 @@
 #include "blastspawner.h"
 #include "GameScene.h"
 
-const float SPEED = 0.25f;
+/*const float SPEED = 0.25f;
 
 Blast::Blast(sf::Vector2f pos)
 	:AnimatedSprite (pos)
@@ -35,10 +35,10 @@ void Blast::SetUpBlastAnimation()
 	addAnimation("blast", frames);
 }
 
-/*void Blast::draw()
-{
-	GAME.getRenderWindow().draw(sprite_);
-}*/
+//void Blast::draw()
+//{
+//	GAME.getRenderWindow().draw(sprite_);
+//}
 
 void Blast::update(sf::Time& elapsed)
 {
@@ -60,22 +60,23 @@ void Blast::update(sf::Time& elapsed)
 	}
 }
 
-/*sf::FloatRect Blast::getCollisionRect()
-{
-	return AnimatedSprite::getSprite().getGlobalBounds();
-}*/
+//sf::FloatRect Blast::getCollisionRect()
+//{
+//	return AnimatedSprite::getSprite().getGlobalBounds();
+//}
 
-/*void Blast::handleCollision(GameObject& otherGameObject)
-{
-	if (otherGameObject.hasTag("laser"))
-	{
-		otherGameObject.makeDead();
-		ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
-		GAME.getCurrentScene().addGameObject(explosion);
+//void Blast::handleCollision(GameObject& otherGameObject)
+//{
+//	if (otherGameObject.hasTag("laser"))
+//	{
+//		otherGameObject.makeDead();
+//		ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
+//		GAME.getCurrentScene().addGameObject(explosion);
+//
+//		GameScene& scene = (GameScene&)GAME.getCurrentScene();
+//		scene.increaseScore();
+//	}
 
-		GameScene& scene = (GameScene&)GAME.getCurrentScene();
-		scene.increaseScore();
-	}
-
-	makeDead();
-}*/
+//	makeDead();
+//}
+*/

@@ -2,7 +2,7 @@
 
 #include "Engine/GameEngine.h"
 
-class Blast : public AnimatedSprite
+/*class Blast : public AnimatedSprite
 {
 public:
 	//creates our blast
@@ -19,3 +19,4 @@ private:
 };
 
 typedef std::shared_ptr<Blast> BlastPtr;
+*/

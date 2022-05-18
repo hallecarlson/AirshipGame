@@ -48,6 +48,12 @@
     <ClCompile Include="test.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="temp_blast.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="temp_blastspawner.cpp">
+      <Filter>Engine\sprites</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Game.h">
@@ -94,6 +100,12 @@
       <Filter>Engine\sprites</Filter>
     </ClInclude>
     <ClInclude Include="cloudspawner.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="temp_blast.h">
+      <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="temp_blastspawner.h">
       <Filter>Engine\sprites</Filter>
     </ClInclude>
   </ItemGroup>
