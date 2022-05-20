@@ -1,9 +1,8 @@
 #include "blast.h"
 //#include "explosion.h"
 //#include "blastspawner.h"
-//#include "GameScene.h"
 
-const float SPEED = 0.25f;
+const float SPEED = 0.1f;
 
 Blast::Blast(sf::Vector2f pos)
 	:AnimatedSprite (pos)

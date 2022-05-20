@@ -9,7 +9,6 @@ Laser::Laser(sf::Vector2f pos, int dir)
 	assignTag("laser");
 
 	direction = dir;
-	//printf("%i\n", direction);
 }
 
 void Laser::draw()

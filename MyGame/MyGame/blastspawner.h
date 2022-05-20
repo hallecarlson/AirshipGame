@@ -10,6 +10,7 @@ public:
 
 private:
 	int timer_ = 0;
+
 };
 
 typedef std::shared_ptr<BlastSpawner> BlastSpawnerPtr;

@@ -4,9 +4,11 @@
 /*
 
 To-do List
-	Get blasts to spawn
-	Get blasts to animate
-	Get blasts to spawn randomly from all sides
+	Get blasts to move accross screen
+	Get blasts to spawn on left or right side of screen
+	Get blasts to move left to right
+	Fix blast sizes
+	Get blasts to spawn randomly from right and left sides of screen
 	Handle collision
 	Fix lives system and tweak points system accordingly
 	Fix errors
@@ -95,6 +97,11 @@ Date: 5/20/22	Done:
 				Fixed the errors with blast
 				Fixed the dimensions of blast
 				Blast worked!
+				Pushed to GitHub
+
+				Pulled from GitHub
+				Played around with blast spawns and tried to figure out directions and how to spawn from different sides of screen
+				Took a break because it got too confusing
 				Pushed to GitHub
 */
 

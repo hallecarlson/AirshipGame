@@ -15,7 +15,9 @@ public:
 
 private:
 	void SetUpBlastAnimation();
-	//sf::Sprite sprite_;
+	//sf::Sprite sprite_;	
+
+	int directionb;
 };
 
 typedef std::shared_ptr<Blast> BlastPtr;
