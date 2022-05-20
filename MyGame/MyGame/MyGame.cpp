@@ -4,13 +4,12 @@
 /*
 
 To-do List
-	Fix errors
-	Get clouds and blasts to spawn
-	Get blasts to animate (and not disappear after the animation ends
+	Get blasts to spawn
+	Get blasts to animate
 	Get blasts to spawn randomly from all sides
-	Get lasers to shoot from all sides using WASD
 	Handle collision
 	Fix lives system and tweak points system accordingly
+	Fix errors
  
 Maintenance Log
 
@@ -89,6 +88,13 @@ Date: 5/18/22	Done:
 				Uncommented blast files to try and solve the errors
 				Got help from Mr. Miyoshi
 				Commented out some things to try and get the sprite on the screen
+				Pushed to GitHub
+
+Date: 5/20/22	Done:
+				Got help from Mr. Miyoshi
+				Fixed the errors with blast
+				Fixed the dimensions of blast
+				Blast worked!
 				Pushed to GitHub
 */
 

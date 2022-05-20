@@ -8,7 +8,7 @@
 #include "gameoverscene.h"
 #include "blast.h"
 #include "blastspawner.h"
-#include "temp_blast.h"
+//#include "temp_blast.h"
 
 GameScene::GameScene() 
 {
@@ -19,7 +19,7 @@ GameScene::GameScene()
 	//addGameObject(blastSpawner);
 
 	BlastPtr blast = std::make_shared<Blast>(sf::Vector2f(200, 200));
-	GAME.getCurrentScene().addGameObject(blast);
+	addGameObject(blast);
 
 	/*
 	Blast_tSpawnerPtr blast_tSpawner = std::make_shared<Blast_tSpawner>();

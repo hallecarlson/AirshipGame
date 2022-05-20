@@ -1,7 +1,7 @@
 #include "blast.h"
-#include "explosion.h"
-#include "blastspawner.h"
-#include "GameScene.h"
+//#include "explosion.h"
+//#include "blastspawner.h"
+//#include "GameScene.h"
 
 const float SPEED = 0.25f;
 
@@ -22,16 +22,16 @@ Blast::Blast(sf::Vector2f pos)
 void Blast::SetUpBlastAnimation()
 {
 	std::vector<sf::IntRect> frames;
-	frames.push_back(sf::IntRect(0, 0, 64, 64)); //frame 1
-	frames.push_back(sf::IntRect(64, 0, 64, 64)); //2
-	frames.push_back(sf::IntRect(128, 0, 64, 64)); //3
-	frames.push_back(sf::IntRect(192, 0, 64, 64)); //4
-	frames.push_back(sf::IntRect(256, 0, 64, 64)); //5
-	frames.push_back(sf::IntRect(320, 0, 64, 64)); //6
-	frames.push_back(sf::IntRect(384, 0, 64, 64)); //7
-	frames.push_back(sf::IntRect(448, 0, 64, 64)); //8
-	frames.push_back(sf::IntRect(512, 0, 64, 64)); //9
-	frames.push_back(sf::IntRect(576, 0, 64, 64)); //10
+	frames.push_back(sf::IntRect(0, 0, 192, 192)); //frame 1
+	frames.push_back(sf::IntRect(192, 0, 192, 192)); //2
+	frames.push_back(sf::IntRect(384, 0, 192, 192)); //3
+	frames.push_back(sf::IntRect(0, 192, 192, 192)); //4
+	frames.push_back(sf::IntRect(192, 192, 192, 192)); //5
+	frames.push_back(sf::IntRect(384, 192, 192, 192)); //6
+	frames.push_back(sf::IntRect(0, 384, 192, 192)); //7
+	frames.push_back(sf::IntRect(192, 384, 192, 192)); //8
+	frames.push_back(sf::IntRect(384, 384, 192, 192)); //9
+	frames.push_back(sf::IntRect(0, 576, 192, 192)); //10
 
 	addAnimation("blast", frames);
 }
