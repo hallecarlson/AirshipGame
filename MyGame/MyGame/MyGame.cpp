@@ -4,13 +4,17 @@
 /*
 
 To-do List
-	Get blasts to move accross screen
-	Get blasts to spawn on left or right side of screen
-	Get blasts to move left to right
+	Priority:
+	Get blasts to move accross screen randomly on y-axis
+	Check that collision is working properly for lasers->blasts
+	Add collision for blasts->airship
+	Add explosions for collisions
 	Fix blast sizes
-	Get blasts to spawn randomly from right and left sides of screen
-	Handle collision
 	Fix lives system and tweak points system accordingly
+
+	Less important:
+	Get blasts to spawn randomly from right and left sides of screen
+	Get blasts to spawn on left or right side of screen moving in right definition
 	Fix errors
  
 Maintenance Log
@@ -110,6 +114,10 @@ Date: 5/23/22	Done:
 				Uncommented collision code
 				Had an error with blasts despawning
 				Had an error with blasts spawning in the same place
+				Pushed to GitHub
+
+				Pulled from GitHub
+				Edited list of tasks based on priority
 				Pushed to GitHub
 */
 
