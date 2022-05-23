@@ -10,8 +10,8 @@ public:
 	
 	void update(sf::Time& elapsed);
 
-	//sf::FloatRect getCollisionRect();
-	//void handleCollision(GameObject& otherGameObject);
+	sf::FloatRect getCollisionRect();
+	void handleCollision(GameObject& otherGameObject);
 
 private:
 	void SetUpBlastAnimation();

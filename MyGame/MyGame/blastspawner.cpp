@@ -2,7 +2,7 @@
 #include "blast.h"
 
 //the number of milliseconds between blast spawns
-const int SPAWN_DELAY = 2500;
+const int SPAWN_DELAY = 1000;
 
 void BlastSpawner::update(sf::Time& elapsed)
 {
@@ -21,7 +21,7 @@ void BlastSpawner::update(sf::Time& elapsed)
 
 		sf::Vector2u size = GAME.getRenderWindow().getSize();
 
-		directionb = 1 + rand() % (2 - 1 + 1);
+		/*directionb = 1 + rand() % (2 - 1 + 1);
 
 		if (directionb == 1) //left to right >>
 		{
@@ -32,17 +32,17 @@ void BlastSpawner::update(sf::Time& elapsed)
 		{
 			float blastX = (float)(size.x + 100);
 			float blastY = (float)(rand() % size.y);
-		}
+		}*/
 
 
 		//spawn the meteor off the right side of the screen
 		//we're assuming the meteor isn't more than 100 pixels wide
-		//float blastX = (float)(size.x + 100);
+		float blastX = (float)(size.x + 100);
 		
 		//float blastX = (float)(size.x / 2);
 
 		//spawn the meteor somewhere along the height of the window, randomly
-		//float blastY = (float)(rand() % size.y);
+		float blastY = (float)(rand() % size.y);
 		
 		//float blastY = (float)(size.y / 2);
 		

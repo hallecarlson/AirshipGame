@@ -2,7 +2,7 @@
 //#include "explosion.h"
 //#include "blastspawner.h"
 
-const float SPEED = 0.1f;
+const float SPEED = 0.15f;
 
 Blast::Blast(sf::Vector2f pos)
 	:AnimatedSprite (pos)
@@ -13,9 +13,9 @@ Blast::Blast(sf::Vector2f pos)
 	SetUpBlastAnimation();
 	playAnimation("blast", AnimationMode::LoopForwards);
 
-	//assignTag("blast");
+	assignTag("blast");
 
-	//setCollisionCheckEnabled(true);
+	setCollisionCheckEnabled(true);
 }
 
 void Blast::SetUpBlastAnimation()
@@ -46,38 +46,37 @@ void Blast::update(sf::Time& elapsed)
 {
 	AnimatedSprite::update(elapsed);
 	
-	//int msElapsed = elapsed.asMilliseconds();
-	//sf::Vector2f pos = AnimatedSprite::getPosition();
+	int msElapsed = elapsed.asMilliseconds();
+	sf::Vector2f pos = AnimatedSprite::getPosition();
 
-	if (!isPlaying() /*|| pos.x < AnimatedSprite::getCollisionRect().width * -1*/)
+	if (!isPlaying() || pos.x < AnimatedSprite::getCollisionRect().width * -1)
 	{
 		//GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		//scene.decreaseLives();
 		
 		makeDead();
 	}
-	/*else
+	else
 	{
 		setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
-	}*/
+	}
 }
 
-//sf::FloatRect Blast::getCollisionRect()
-//{
-//	return AnimatedSprite::getSprite().getGlobalBounds();
-//}
+sf::FloatRect Blast::getCollisionRect()
+{
+	return AnimatedSprite::getSprite().getGlobalBounds();
+}
 
-//void Blast::handleCollision(GameObject& otherGameObject)
-//{
-//	if (otherGameObject.hasTag("laser"))
-//	{
-//		otherGameObject.makeDead();
-//		ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
-//		GAME.getCurrentScene().addGameObject(explosion);
-//
-//		GameScene& scene = (GameScene&)GAME.getCurrentScene();
-//		scene.increaseScore();
-//	}
+void Blast::handleCollision(GameObject& otherGameObject)
+{
+	if (otherGameObject.hasTag("laser"))
+	{
+		otherGameObject.makeDead();
+		//ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
+		//GAME.getCurrentScene().addGameObject(explosion);
 
-//	makeDead();
-//}
+		//GameScene& scene = (GameScene&)GAME.getCurrentScene();
+		//scene.increaseScore();
+	}
+	makeDead();
+}

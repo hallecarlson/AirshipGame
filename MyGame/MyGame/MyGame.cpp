@@ -103,6 +103,14 @@ Date: 5/20/22	Done:
 				Played around with blast spawns and tried to figure out directions and how to spawn from different sides of screen
 				Took a break because it got too confusing
 				Pushed to GitHub
+
+Date: 5/23/22	Done:
+				Pulled from GitHub
+				Got help from Mr. Miyoshi getting blasts to move across screen
+				Uncommented collision code
+				Had an error with blasts despawning
+				Had an error with blasts spawning in the same place
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;
