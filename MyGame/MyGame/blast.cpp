@@ -1,5 +1,5 @@
 #include "blast.h"
-//#include "explosion.h"
+#include "explosion.h"
 //#include "blastspawner.h"
 
 const float SPEED = 0.15f;
@@ -72,8 +72,8 @@ void Blast::handleCollision(GameObject& otherGameObject)
 	if (otherGameObject.hasTag("laser"))
 	{
 		otherGameObject.makeDead();
-		//ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
-		//GAME.getCurrentScene().addGameObject(explosion);
+		ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
+		GAME.getCurrentScene().addGameObject(explosion);
 
 		//GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		//scene.increaseScore();

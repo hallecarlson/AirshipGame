@@ -2,7 +2,7 @@
 #include "blast.h"
 
 //the number of milliseconds between blast spawns
-const int SPAWN_DELAY = 1000;
+const int SPAWN_DELAY = 2000;
 
 void BlastSpawner::update(sf::Time& elapsed)
 {

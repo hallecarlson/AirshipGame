@@ -119,6 +119,13 @@ Date: 5/23/22	Done:
 				Pulled from GitHub
 				Edited list of tasks based on priority
 				Pushed to GitHub
+
+Date: 5/24/22	Done:
+				Pulled from GitHub
+				Got explosions working
+				Clouds and blasts still despawning after entering screen (I'm pretty sure clouds were working before??)
+				Fixed the despawning (changed spawn delay and it somehow fixed the issue)
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;
