@@ -12,6 +12,7 @@ public:
 	void draw();
 	void update(sf::Time& elapsed);
 	sf::FloatRect getCollisionRect();
+	void handleCollision(GameObject& otherGameObject); //may need to adjust for animated sprite instead of game object
 
 private:
 	sf::Sprite sprite_;

@@ -122,9 +122,16 @@ Date: 5/23/22	Done:
 
 Date: 5/24/22	Done:
 				Pulled from GitHub
-				Got explosions working
+				Got explosions (and collision laser->blast) working
 				Clouds and blasts still despawning after entering screen (I'm pretty sure clouds were working before??)
 				Fixed the despawning (changed spawn delay and it somehow fixed the issue)
+				Pushed to GitHub
+
+				Pulled from GitHub
+				Added collision (blast->ship)
+				Uncommented code for score
+				Edited code for lives to decrease not when the blasts leave the screen, but when they collide with the ship
+				(Laptop won't let me run code due to some graphical error)
 				Pushed to GitHub
 */
 

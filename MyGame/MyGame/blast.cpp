@@ -1,5 +1,7 @@
 #include "blast.h"
 #include "explosion.h"
+#include "GameScene.h"
+#include "score.h"
 //#include "blastspawner.h"
 
 const float SPEED = 0.15f;
@@ -49,7 +51,7 @@ void Blast::update(sf::Time& elapsed)
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = AnimatedSprite::getPosition();
 
-	if (!isPlaying() || pos.x < AnimatedSprite::getCollisionRect().width * -1)
+	if (!isPlaying() || pos.x < AnimatedSprite::getCollisionRect().width * -1) //may need to be adjusted so that lives only decrease when ship is hit, but that may be done somewhere else
 	{
 		//GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		//scene.decreaseLives();
@@ -75,8 +77,8 @@ void Blast::handleCollision(GameObject& otherGameObject)
 		ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
 		GAME.getCurrentScene().addGameObject(explosion);
 
-		//GameScene& scene = (GameScene&)GAME.getCurrentScene();
-		//scene.increaseScore();
+		GameScene& scene = (GameScene&)GAME.getCurrentScene();
+		scene.increaseScore();
 	}
 	makeDead();
 }

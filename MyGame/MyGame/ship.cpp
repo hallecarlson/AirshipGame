@@ -1,6 +1,9 @@
 #include "ship.h"
 #include <memory>
 #include "laser.h"
+#include "explosion.h"
+#include "blast.h"
+#include "GameScene.h"
 
 const float SPEED = 0.3f;
 const int FIRE_DELAY = 200;
@@ -9,6 +12,8 @@ Ship::Ship()
 {
 	sprite_.setTexture(GAME.getTexture("Resources/Airship.png"));
 	sprite_.setPosition(sf::Vector2f(100, 100));
+
+	setCollisionCheckEnabled(true);
 }
 
 
@@ -104,4 +109,29 @@ void Ship::update(sf::Time& elapsed)
 		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY), direction);
 		GAME.getCurrentScene().addGameObject(laser);
 	}
+}
+
+sf::FloatRect Ship::getCollisionRect()
+{
+	return sprite_.getGlobalBounds();
+}
+
+void Ship::handleCollision(GameObject& otherGameObject) //check that GameObject code doesn't need to be changed to AnimatedSprite
+//void Ship::handleCollision(GameObject& AnimatedSprite)
+{
+	if (otherGameObject.hasTag("blast"))
+	//if (AnimatedSprite.hasTag("blast"))
+	{
+		otherGameObject.makeDead(); //may need to change for animated sprite instead of game object
+		//AnimatedSprite.makeDead();
+		//ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
+		ExplosionPtr explosion = std::make_shared<Explosion>(sprite_.getPosition());
+		GAME.getCurrentScene().addGameObject(explosion);
+
+		//GameScene& scene = (GameScene&)GAME.getCurrentScene();
+		//scene.increaseScore();
+		GameScene& scene = (GameScene&)GAME.getCurrentScene();
+		scene.decreaseLives();
+	}
+	makeDead();
 }
