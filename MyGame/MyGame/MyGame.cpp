@@ -133,6 +133,12 @@ Date: 5/24/22	Done:
 				Edited code for lives to decrease not when the blasts leave the screen, but when they collide with the ship
 				(Laptop won't let me run code due to some graphical error)
 				Pushed to GitHub
+
+Date: 5/25/22:	Done:	
+				Pulled from GitHub
+				Got some help from Mr. Miyoshi
+				Tried to make explosion spawn in middle of ship
+				Pushed to GitHub
 */
 
 const int WINDOW_WIDTH = 800;

@@ -2,6 +2,7 @@
 #include "explosion.h"
 #include "GameScene.h"
 #include "score.h"
+#include "laser.h"
 //#include "blastspawner.h"
 
 const float SPEED = 0.15f;

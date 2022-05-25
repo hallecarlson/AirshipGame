@@ -22,7 +22,6 @@ void Ship::draw()
 	GAME.getRenderWindow().draw(sprite_);
 }
 
-
 void Ship::update(sf::Time& elapsed)
 {
 	int direction = 3;
@@ -119,12 +118,23 @@ sf::FloatRect Ship::getCollisionRect()
 void Ship::handleCollision(GameObject& otherGameObject) //check that GameObject code doesn't need to be changed to AnimatedSprite
 //void Ship::handleCollision(GameObject& AnimatedSprite)
 {
+	//FIX
+	/*sf::Vector2f pos = sprite_.getPosition();
+	float x = pos.x;
+	float y = pos.y;*/
+
 	if (otherGameObject.hasTag("blast"))
 	//if (AnimatedSprite.hasTag("blast"))
 	{
 		otherGameObject.makeDead(); //may need to change for animated sprite instead of game object
 		//AnimatedSprite.makeDead();
 		//ExplosionPtr explosion = std::make_shared<Explosion>(AnimatedSprite::getPosition());
+		sf::FloatRect bounds = sprite_.getGlobalBounds();
+
+		//FIX
+		float explosionX = x + (bounds.width / 2.0f);
+		float explosionY = y + (bounds.height / 2.0f);
+
 		ExplosionPtr explosion = std::make_shared<Explosion>(sprite_.getPosition());
 		GAME.getCurrentScene().addGameObject(explosion);
 
@@ -133,5 +143,5 @@ void Ship::handleCollision(GameObject& otherGameObject) //check that GameObject 
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		scene.decreaseLives();
 	}
-	makeDead();
+	//makeDead();
 }
