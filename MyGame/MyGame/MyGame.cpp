@@ -6,15 +6,11 @@
 To-do List
 	Priority:
 	Get blasts to move accross screen randomly on y-axis
-	Check that collision is working properly for lasers->blasts
-	Add collision for blasts->airship
-	Add explosions for collisions
 	Fix blast sizes
-	Fix lives system and tweak points system accordingly
 
 	Less important:
 	Get blasts to spawn randomly from right and left sides of screen
-	Get blasts to spawn on left or right side of screen moving in right definition
+	Get blasts to spawn on left or right side of screen moving in correct direction
 	Fix errors
  
 Maintenance Log
@@ -138,6 +134,12 @@ Date: 5/25/22:	Done:
 				Pulled from GitHub
 				Got some help from Mr. Miyoshi
 				Tried to make explosion spawn in middle of ship
+				Pushed to GitHub
+
+Date: 5/27/22	Done:
+				Got ship explosion animation to play in center of sprite instead of top left
+				Got lives to display next to score
+				Tried to fix blasts spawning randomly on y-axis (didn't succeed YET)
 				Pushed to GitHub
 */
 

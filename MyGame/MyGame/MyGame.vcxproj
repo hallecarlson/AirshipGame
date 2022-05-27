@@ -98,6 +98,7 @@
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="score.cpp" />
     <ClCompile Include="ship.cpp" />
+    <ClCompile Include="lives.cpp" />
     <ClCompile Include="temp_blast.cpp" />
     <ClCompile Include="temp_blastspawner.cpp" />
     <ClCompile Include="test.cpp" />
@@ -114,6 +115,7 @@
     <ClInclude Include="gameovermessage.h" />
     <ClInclude Include="gameoverscene.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="lives.h" />
     <ClInclude Include="laser.h" />
     <ClInclude Include="blast.h" />
     <ClInclude Include="blastspawner.h" />

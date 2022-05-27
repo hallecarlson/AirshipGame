@@ -2,10 +2,10 @@
 #include "ship.h" 
 #include "blastspawner.h"
 #include "cloudspawner.h"
-#include "score.h"
 #include "explosion.h"
 #include "gameoverscene.h"
 #include "score.h"
+#include "lives.h"
 
 GameScene::GameScene() 
 {
@@ -23,6 +23,9 @@ GameScene::GameScene()
 
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
 	addGameObject(score);
+
+	LivesPtr lives = std::make_shared<Lives>(sf::Vector2f(150.0f, 10.0f));
+	addGameObject(lives);
 }
 
 int GameScene::getScore()

@@ -54,6 +54,9 @@
     <ClCompile Include="temp_blastspawner.cpp">
       <Filter>Engine\sprites</Filter>
     </ClCompile>
+    <ClCompile Include="lives.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Game.h">
@@ -107,6 +110,9 @@
     </ClInclude>
     <ClInclude Include="temp_blastspawner.h">
       <Filter>Engine\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="lives.h">
+      <Filter>Engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -11,8 +11,8 @@ void BlastSpawner::update(sf::Time& elapsed)
 	int msElapsed = elapsed.asMilliseconds();
 	timer_ -= msElapsed;
 
-	float blastX;
-	float blastY;
+	//float blastX;
+	//float blastY;
 
 	//if our timer has elapsed, reset it and spawn a meteor
 	if (timer_ <= 0)
