@@ -4,14 +4,7 @@
 /*
 
 To-do List
-	Priority:
-	Get blasts to move accross screen randomly on y-axis
-	Fix blast sizes
-
-	Less important:
-	Get blasts to spawn randomly from right and left sides of screen
-	Get blasts to spawn on left or right side of screen moving in correct direction
-	Fix errors
+	Finalize
  
 Maintenance Log
 
@@ -140,6 +133,15 @@ Date: 5/27/22	Done:
 				Got ship explosion animation to play in center of sprite instead of top left
 				Got lives to display next to score
 				Tried to fix blasts spawning randomly on y-axis (didn't succeed YET)
+				Pushed to GitHub
+
+Date: 5/31/22	Done:
+				Got help from Mr. Miyoshi
+				Got blasts to spawn randomly on y-axis
+				Got blasts to spawn from left side of screen
+				Fixed error where blasts despawn in the wrong place
+				Fixed error where blasts would disappear when they collided
+				Resized blasts and changed spawn timer and speed
 				Pushed to GitHub
 */
 

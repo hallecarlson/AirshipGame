@@ -6,7 +6,8 @@ class Blast : public AnimatedSprite
 {
 public:
 	//creates our blast
-	Blast(sf::Vector2f pos);
+	//Blast(sf::Vector2f pos);
+	Blast(sf::Vector2f pos, int dirb);
 	
 	void update(sf::Time& elapsed);
 
