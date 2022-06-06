@@ -1,5 +1,4 @@
 #include "AnimatedSprite.h"
-
 #include "Game.h"
 
 // Construct the AnimatedSprite and set its initial position.
